@@ -17,12 +17,12 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contacts' element={<Contacts />} />
-        <Route path='/catalog' element={<Katalog />} />
-        <Route path='/item/:id' element={<Item />} />
-        <Route path='/contact' element={null} />
+        <Route path='/AMERICANA/' element={<Home />} />
+        <Route path='/AMERICANA/about' element={<About />} />
+        <Route path='/AMERICANA/contacts' element={<Contacts />} />
+        <Route path='/AMERICANA/catalog' element={<Katalog />} />
+        <Route path='/AMERICANA/item/:id' element={<Item />} />
+        <Route path='/AMERICANA/contact' element={null} />
       </Routes>
       <Footer />
     </>

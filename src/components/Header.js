@@ -6,17 +6,17 @@ export function Header() {
       <header>
         <div className='left'>
           <ul>
-            <li><NavLink className={ClassLink} to="/catalog">КАТАЛОГ</NavLink></li>
-            <li><NavLink className={ClassLink} to="/about">ПРО НАС</NavLink></li>
+            <li><NavLink className={ClassLink} to="/AMERICANA/catalog">КАТАЛОГ</NavLink></li>
+            <li><NavLink className={ClassLink} to="/AMERICANA/about">ПРО НАС</NavLink></li>
           </ul>
         </div>
 
         <div>
-          <NavLink to="/" className={ClassLink}><img id="logo" src={logoText} alt="AMERICANA"></img></NavLink>
+          <NavLink to="/AMERICANA/" className={ClassLink}><img id="logo" src={logoText} alt="AMERICANA"></img></NavLink>
         </div>
 
         <div className='right'>
-          <NavLink to="/contacts" className={ClassLink}>КОНТАКТИ</NavLink>
+          <NavLink to="/AMERICANA/contacts" className={ClassLink}>КОНТАКТИ</NavLink>
         </div>
       </header>
     );
