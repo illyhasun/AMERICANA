@@ -1,0 +1,257 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #090909;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    width: 80%;
+    background-color: #090909;
+    z-index: 100;
+}
+header{
+    position: fixed;
+    top:0;
+}
+footer {
+    clear: both;
+    position: relative;
+    margin-top: calc(-100vh+50px);
+}
+#logo {
+    height: 30px;
+    margin: 0 10px;
+}
+header ul, footer ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+footer ul{
+    width: 100%;
+    justify-content: space-between;
+}
+a, p, h1, h2, h3, b {
+    color: #fff;
+    text-decoration: none;
+}
+header .right, header .left{
+    min-width: 200px;
+}
+header .right{
+    text-align: right;
+}
+.active-link{
+    opacity: 0.5;
+    cursor: default;
+}
+.not-active{
+    transition: opacity 500ms ease;
+}
+.not-active:hover{
+    opacity: 0.5;
+}
+
+#one{
+    background-image: url('./pictures/presentation.png');
+}
+#two{
+    background-image: url('./pictures/presentation2.png');
+}
+.presentation {
+    background-image: no-repeat;
+    width: 100%;
+    height: 685px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.presentation div{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+h2{
+    font-size: 36px;
+    margin: 10px 0;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.aboutus{
+    display: flex;
+    margin: 100px 15%;
+}
+.aboutus .ableft{
+    width: 50%;
+    margin-right: 15%;
+    font-weight: 500;
+    font-size: 20;
+    line-height: 115%;
+}
+.aboutus .ableft, .aboutus .abright{
+    font-weight: 500;
+    font-size: 20;
+    line-height: 115%;
+    margin-bottom: 30px;
+}
+.aboutus .ableft h2, .aboutus .abright h2{
+    margin-bottom: 30px;
+}
+h2,li,h1{
+    font-weight: 600;
+}
+.aboutus .abright{
+    width: 50%;
+}
+
+
+#flip{
+    display: flex;
+    width: 100%;
+    margin: 25px 0;
+}
+#flip div{
+    display: flex;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    width: fit-content;
+}
+#flip h2{
+    margin-right: 10px;
+}
+#flip div:hover{
+    opacity: 0.5;
+}
+.icon{
+    margin-left: 5px;
+}
+.filter {
+    width: 100%;
+    margin: 25px 0 35px 0;
+    display: none;
+}
+.filter ul {
+    display: flex;
+}
+.filter ul li{
+    color: #fff;
+    margin-right: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+main{
+    margin-top: 50px;
+}
+.catalog {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:50px 0 10px 10%;
+}
+main .items {
+    width: 30%;
+    margin-bottom: 100px;
+}
+main .item-pic{
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+main .items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    transition: transform 500ms ease;
+}
+main .items img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 80%;
+}
+
+.contact div ul li{
+    color: white;
+    margin: 10px 20px;
+}
+
+
+
+.itemInfo{
+    margin: 100px 0;
+    margin: 10px 10%;   
+    width: 80%;
+}
+.itemInfo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.itemInfo-pic{
+    width: 48%;
+    height: 700px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.itemInfo-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    transition: transform 500ms ease;
+}
+.itemInfo-pic img:hover{
+    transform: scale(1.05);
+}
+.itemInfo-desc p{
+    border: 1px solid #fff;
+    width: 30%;
+    margin: 30px 0 50px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    main .items {
+        width: 45%;
+    }
+  }
