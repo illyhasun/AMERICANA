@@ -5,7 +5,7 @@ function Items({item}) {
   return (
     <div className='items'>
         <div className='item-pic'>
-          <Link to = {`/AMERICANA/item/${item.id}`}><img src = {`/img${item.img.main}`} alt = 'Chyba'></img></Link>
+          <Link to = {`/AMERICANA/item/${item.id}`}><img src = {process.env.PUBLIC_URL + `/img${item.img.main}`} alt = 'Chyba'></img></Link>
         </div>
         <div>
             <h3>{item.title}</h3>
