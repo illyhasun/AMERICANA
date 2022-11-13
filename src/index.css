@@ -149,7 +149,6 @@ h2,li,h1{
 .filter {
     width: 100%;
     margin: 25px 0 35px 0;
-    display: none;
 }
 .filter ul {
     display: flex;
