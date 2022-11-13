@@ -13,7 +13,7 @@ export function Item() {
         <main>
             <div className='itemInfo'>
                 {found && (<ItemInfo item = {found}/>)}
-                <Link to='/catalog' className="btn-center"><button>НАЗАД В КАТАЛОГ</button></Link>
+                <Link to='/AMERICANA/catalog' className="btn-center"><button>НАЗАД В КАТАЛОГ</button></Link>
             </div>
         </main>
     )

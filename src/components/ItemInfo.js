@@ -10,16 +10,16 @@ function ItemInfo({item}) {
           </div>
           <div className='itemInfo-list'>  
             <div className='itemInfo-pic'>
-              <img src = {`/img/${item.img.main}`} alt = 'Chyba'></img>
+              <img src = {process.env.PUBLIC_URL + `/img/${item.img.main}`} alt = 'Chyba'></img>
             </div>
             <div className='itemInfo-pic'>
-              <img src = {`/img/${item.img.pic1}`} alt = 'Chyba'></img>
+              <img src = {process.env.PUBLIC_URL + `/img/${item.img.pic1}`} alt = 'Chyba'></img>
             </div>
             <div className='itemInfo-pic'>
-              <img src = {`/img/${item.img.pic2}`} alt = 'Chyba'></img>
+              <img src = {process.env.PUBLIC_URL + `/img/${item.img.pic2}`} alt = 'Chyba'></img>
             </div>
             <div className='itemInfo-pic'>
-              <img src = {`/img/${item.img.pic3}`} alt = 'Chyba'></img>
+              <img src = {process.env.PUBLIC_URL + `/img/${item.img.pic3}`} alt = 'Chyba'></img>
             </div>
           </div>
         </>
