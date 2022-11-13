@@ -23,11 +23,6 @@ header{
     position: fixed;
     top:0;
 }
-footer {
-    clear: both;
-    position: relative;
-    margin-top: calc(-100vh+50px);
-}
 #logo {
     height: 30px;
     margin: 0 10px;
