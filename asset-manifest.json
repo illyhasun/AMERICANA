@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AMERICANA/static/css/main.2d009e8f.css",
+    "main.css": "/AMERICANA/static/css/main.82ea2518.css",
     "main.js": "/AMERICANA/static/js/main.f02cc8e0.js",
     "static/media/presentation2.png": "/AMERICANA/static/media/presentation2.1ff1c1e27010920860eb.png",
     "static/media/presentation.png": "/AMERICANA/static/media/presentation.114158b58521e142770e.png",
@@ -10,11 +10,11 @@
     "static/media/logo-pic.svg": "/AMERICANA/static/media/logo-pic.763bdc6fba4df108062ecc70edc11734.svg",
     "static/media/burger.svg": "/AMERICANA/static/media/burger.fcc98e8ccdca5551ddd5680ca708df70.svg",
     "static/media/icon.svg": "/AMERICANA/static/media/icon.69931e7bd3f7c4a9fa34e4b96b53ae9d.svg",
-    "main.2d009e8f.css.map": "/AMERICANA/static/css/main.2d009e8f.css.map",
+    "main.82ea2518.css.map": "/AMERICANA/static/css/main.82ea2518.css.map",
     "main.f02cc8e0.js.map": "/AMERICANA/static/js/main.f02cc8e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d009e8f.css",
+    "static/css/main.82ea2518.css",
     "static/js/main.f02cc8e0.js"
   ]
 }
