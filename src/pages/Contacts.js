@@ -1,9 +1,9 @@
 export function Contacts() {
     return (
         <main>
-            <div className='contact'>
-                <div className="left">
-                    <h1>Магазини</h1>
+                <div className="contacts">
+                <div>
+                    <h3>Магазини</h3>
                         <ul>
                             <li>Ужгород, проспект свободи 34/32</li>
                             <li>Ужгород, площа театральна 3</li>
@@ -11,7 +11,7 @@ export function Contacts() {
                         </ul>
                 </div>
                 <div>
-                    <h1>Соціальні мереєі</h1>
+                    <h3>Соціальні мереєі</h3>
                     <ul>
                         <li>Інстаграм</li>
                         <li>Фейсбук</li>
@@ -19,7 +19,7 @@ export function Contacts() {
                     </ul>
                 </div>
                 <div>
-                    <h1 className="right">Контакти</h1>
+                    <h3 className="right">Контакти</h3>
                     <ul>
                         <li>380 066 02 03 777</li>
                         <li>380 068 03 02 667</li>

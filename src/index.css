@@ -6,89 +6,34 @@ body {
     background-color: #090909;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    height: 100vh;
-}
-
-
-header, footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10%;
-    width: 80%;
-    background-color: #090909;
-    z-index: 100;
-}
-header{
-    position: fixed;
-    top:0;
-}
-#logo {
-    height: 30px;
-    margin: 0 10px;
-}
-header ul, footer ul{
-    display: flex;
-}
-ul li{
-    list-style: none;
-    margin-right: 30px;
-}
-footer ul{
     width: 100%;
-    justify-content: space-between;
+    margin-top: 70px;
 }
-a, p, h1, h2, h3, b {
+
+/* #####################################################
+                        Текст
+##################################################### */
+
+a, p, h1, h2, h3, h4, b{
     color: #fff;
     text-decoration: none;
 }
-header .right, header .left{
-    min-width: 200px;
-}
-header .right{
-    text-align: right;
-}
-.active-link{
-    opacity: 0.5;
-    cursor: default;
-}
-.not-active{
-    transition: opacity 500ms ease;
-}
-.not-active:hover{
-    opacity: 0.5;
-}
-
-#one{
-    background-image: url('./pictures/presentation.png');
-}
-#two{
-    background-image: url('./pictures/presentation2.png');
-}
-.presentation {
-    background-image: no-repeat;
-    width: 100%;
-    height: 685px;
-    background-size: cover;
-    background-position: top;
-    position: relative;
-}
-.presentation div{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
 h2{
     font-size: 36px;
-    margin: 10px 0;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 22px;
+}
+li{
+    color: #fff;
 }
 button{
     background-color: rgba(0, 0, 0, 0);
-    border: 2px solid white;
-    color: white;
+    border: 3.5px solid white;
+    color: #fff;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -97,41 +42,233 @@ button{
     margin: 0 auto;
     display: block;
 }
-
-.aboutus{
-    display: flex;
-    margin: 100px 15%;
-}
-.aboutus .ableft{
-    width: 50%;
-    margin-right: 15%;
-    font-weight: 500;
-    font-size: 20;
-    line-height: 115%;
-}
-.aboutus .ableft, .aboutus .abright{
-    font-weight: 500;
-    font-size: 20;
-    line-height: 115%;
-    margin-bottom: 30px;
-}
-.aboutus .ableft h2, .aboutus .abright h2{
-    margin-bottom: 30px;
-}
-h2,li,h1{
-    font-weight: 600;
-}
-.aboutus .abright{
-    width: 50%;
+@media (max-width: 800px) {
+    h2{
+        font-size: 20px;
+    }
+    button{
+        border: 2px solid #fff;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .test img{
+        height: 30px;
+    }
 }
 
+/* #####################################################
+                        Ховери
+##################################################### */
 
-#flip{
+
+.active-link {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: auto;
+}
+.not-active {
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+.not-active:hover {
+    opacity: 0.5;
+}
+
+/* #####################################################
+                        ХЕДЕР
+##################################################### */
+
+.container{
+    max-width: 4000px;
+}
+header{
+    background-color: #090909;
+    width: 80%;
+    padding: 0 10%;
+    margin: 0 auto;
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+.header{
+    background-color: #090909;
     display: flex;
     width: 100%;
-    margin: 25px 0;
+    height: 30px;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
 }
-#flip div{
+header ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+ul li:nth-last-child(2){
+    margin-right: 0;
+}
+ul li:first-child{
+    margin-right: 0;
+}
+.logo-div{
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#logo{
+    height: 30px;
+}
+#home, .burger, #contact-left{
+    display: none;
+}
+.burger-pic{
+    color: #fff;
+}
+@media (max-width: 800px) {
+    #home, .burger, #contact-left{
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .burger{
+        position: absolute;
+        top: 20px;
+        left: 5%;
+    }
+    .left ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-top: 100px;
+        width: 100%;
+        height: 100vh;
+        top: 63px;
+        right: 0;
+        background-color: rgba(9,9,9,0.95);
+        align-items: center;
+        transition: left 1s;
+    }
+    .left ul li{
+        margin: 0 0 25px;
+    }
+    .left ul li a{
+        font-size: 20px;
+    }
+    ul li:last-child{
+        margin: 0px;
+    }
+    .not-active-menu{
+        left: 0;
+    }
+    .active-menu{
+        left: -100%;
+    }
+}
+/* #####################################################
+                        ФУТЕР
+##################################################### */
+footer{
+    width: 80%;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+footer ul{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+@media (max-width: 1200px){
+    footer div{
+        display: block;
+        text-align: center;
+    }
+    div li{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 650px){
+    footer div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer ul{
+        display: block;
+    }
+    footer ul li{
+        font-size: 14px;
+    }
+}
+
+
+/* #####################################################
+                      Призентації
+##################################################### */
+
+#one{
+    background-image: url('./pictures/presentation.png');
+    margin-top: 70px;
+}
+#two{
+    background-image: url('./pictures/presentation2.png');
+}
+#three{
+    background-image: url('./pictures/presentation-catalog.png');
+}
+.presentation{
+    padding: 17.5% 0;
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.presentation h2{
+    text-align: center;
+    margin: 10px 0;
+}
+.test img{
+    display: block;
+    margin: 0 auto;
+}
+.about{
+    padding: 10% 0;
+}
+
+/* #####################################################
+                        Про нас
+##################################################### */
+
+.aboutus{
+    width: 80%;
+    padding: 20px 10%;
+    align-items: center;
+}
+.aboutus div{
+    width: 40%;
+}
+@media (max-width: 800px) {
+    .aboutus div{
+        width: 100%;
+        padding-top: 2px;
+    }
+}
+
+/* #####################################################
+                        Фільтр
+##################################################### */
+
+#flip{
     display: flex;
     cursor: pointer;
     transition: opacity 500ms ease;
@@ -140,78 +277,123 @@ h2,li,h1{
 #flip h2{
     margin-right: 10px;
 }
-#flip div:hover{
+#flip:hover{
     opacity: 0.5;
+    transition: transorm ;
 }
-.icon{
+#flip .icon{
+    margin-left: 5px;
+    transform: rotate(-90deg);
+    transition: 0.5s ease;
+}
+.rotate-icon{
+    transition: 0.5s ease;
     margin-left: 5px;
 }
-.filter {
+.not-slide{
     width: 100%;
-    margin: 25px 0 35px 0;
+    margin: 0 0 35px 0;
+    margin-top: 25px;
+    transition-property: margin-top, opacity, visibility;
+    transition-duration: 0.5s;
 }
-.filter ul {
+.slide{
+    width: 100%;
+    margin: 0 0 35px 0;
+    transition-property: margin-top, opacity, visibility;
+    transition-duration: 0.5s;
+    margin-top: -25px;
+    visibility: hidden;
+    opacity: 0;
+}
+.slide ul, .not-slide ul{
     display: flex;
 }
-.filter ul li{
+.slide ul li, .not-slide ul li{
     color: #fff;
     margin-right: 20px;
     list-style: none;
-    cursor: pointer;
 }
 
-main{
-    margin-top: 50px;
-}
+/* #####################################################
+                      Каталог
+##################################################### */
+
 .catalog {
     display: flex;
     width: 80%;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:50px 0 10px 10%;
+    margin:25px 10%;
 }
-main .items {
+.catalog .items {
     width: 30%;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
-main .item-pic{
-    height: 100%;
+.catalog .items:last-child {
+    margin-right: 35%;
+}
+.catalog .items .item-pic{
     overflow: hidden;
-    margin-bottom: 15px;
 }
-main .items img{
+.catalog .items .item-pic a img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 5px;
+    display: block;
     transition: transform 500ms ease;
+    margin-bottom: 5px;
+
 }
-main .items img:hover{
+.catalog .items .item-pic img:hover{
     transform: scale(1.05);
 }
+@media (max-width: 800px) {
+    .catalog .items {
+        width: 45%;
+    }
+    .catalog .items h4{
+        font-size: 18px;
+    }
+    .catalog .items b{
+        font-size: 14px;
+    }
+    .catalog .items:last-child {
+        margin-right: 0;
+    }
+}
+@media (max-width: 389px) {
+    .catalog .items {
+        width: 100%;
+    }
+}
 
+/* #####################################################
+                      Контакти
+##################################################### */
 
-
-
-.contact{
+.contacts{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
     width: 80%;
+    padding: 20px 10%;
+    align-items: center;
 }
 
-.contact div ul li{
-    color: white;
-    margin: 10px 20px;
-}
-
+/* #####################################################
+                      ПРОДУКТ
+##################################################### */
 
 
 .itemInfo{
     margin: 100px 0;
     margin: 10px 10%;   
     width: 80%;
+}
+.itemInfo-desc p{
+    border: 1px solid #fff;
+    width: 30%;
+    margin: 30px 0 50px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 .itemInfo-list {
     display: flex;
@@ -235,16 +417,67 @@ main .items img:hover{
 .itemInfo-pic img:hover{
     transform: scale(1.05);
 }
-.itemInfo-desc p{
-    border: 1px solid #fff;
-    width: 30%;
-    margin: 30px 0 50px 0;
-    padding: 20px 0;
-    text-align: center;
-}
 
 
-@media only screen and (max-width: 1000px) {
+/* #####################################################
+   #####################################################
+
+                      МОБІЛА
+
+#####################################################
+##################################################### */
+
+
+@media (max-width: 800px) {
+    /* .burger{
+        display: block;
+        position: absolute;
+    }
+    .burger-pic{
+        color: #fff;
+    }
+    .left ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-top: 100px;
+        width: 100%;
+        height: 100vh;
+        top: 63px;
+        right: 0;
+        background-color: rgba(9,9,9,0.95);
+        align-items: center;
+        transition: left 1s;
+    }
+    .left ul li{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .left ul li a{
+        font-size: 38px;
+    }
+    #contact-left{
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .not-active-menu{
+        left: 0;
+    }
+    .active-menu{
+        left: -100%;
+        background-color: aqua;
+    }
+    #home{
+        display: block;
+    } */
+
+
+
+
+
+
     main .items {
         width: 45%;
     }

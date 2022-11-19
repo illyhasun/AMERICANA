@@ -14,17 +14,16 @@ import {Header} from './components/Header'
 
 function App() {
   return (
-    <>
-      <Header />
+  <>
+    <Header />
       <Routes>
         <Route path='/AMERICANA/' element={<Home />} />
         <Route path='/AMERICANA/about' element={<About />} />
         <Route path='/AMERICANA/contacts' element={<Contacts />} />
         <Route path='/AMERICANA/catalog' element={<Katalog />} />
         <Route path='/AMERICANA/item/:id' element={<Item />} />
-        <Route path='/AMERICANA/contact' element={null} />
       </Routes>
-      <Footer />
+    <Footer />
     </>
   );
 }

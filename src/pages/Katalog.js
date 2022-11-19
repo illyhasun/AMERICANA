@@ -5,33 +5,68 @@ import {items} from '../data/products'
 
 
 export function Katalog() {
-    const [data, setData] = useState(items)
-    const FilterResult = (catItem) => {
-      const result = items.filter((curData) => {
-        return curData.category === catItem
-      })
-      setData(result)
-    }
+  const [data, setData] = useState(items)
 
-    return(
-      <main className='catalog'>
-        <div id="flip">
-          <div>
-            <h2>КАТЕГОРІЇ</h2><img className='icon'src={icon} alt='Стагніть нормальний браузер'></img>
-          </div>
-        </div>
-        <div className="filter">
-            <ul>
-                <li onClick ={() => setData(items)}>ВСЕ</li>
-                <li onClick ={() => FilterResult('bundy')}>КУРТКИ</li>
-                <li onClick ={() => FilterResult('mikiny')}>КОФТИ</li>
-            </ul>   
-          </div>
-        
-          {data.map((items) => {
-            return(<Items key={items.id} item = {items}/>)
-          })}  
-        </main> 
-    )
+  const [open, setOpen] = useState(false)
+
+  const [showResults, setShowResults] = useState(false);
+  const [activeAll, setActiveAll] = useState(true)
+  const onClick = (id) => setShowResults(id);
+
+  const FilterResult = (category) => {
+    const result = items.filter((curData) => {
+      return curData.category === category
+    })
+    setData(result)
   }
-  
+  const uniqueCategory = [];
+  const pushUniqueCategory = items.filter(item => {
+    const isDuplicate = uniqueCategory.includes(item.category);
+    if (!isDuplicate) {
+      uniqueCategory.push(item.category);
+      return true;
+    }
+    return false;
+  })
+
+  return(
+    <main>
+
+      <div className='presentation' id='two'>
+        <h2>ЖІНОЧИЙ<br></br>КАТАЛОГ</h2>
+      </div>
+
+      <div className='catalog'>
+        <div id="flip" onClick={() => (setOpen(!open))}>
+          <h2>КАТЕГОРІЇ</h2>
+          <img className={open ? 'icon' : 'rotate-icon'}src={icon} alt='Стагніть нормальний браузер'></img>
+        </div>
+
+        <div className={open ? 'slide': 'not-slide'}>
+          <ul>
+            <li onClick ={() => {setData(items)
+              onClick('')
+              setActiveAll(false)
+            }}
+            className={showResults === '' || activeAll ?  'active-link' : 'not-active' }
+            >ВСЕ</li>
+            {pushUniqueCategory.map(item => {
+              return (
+                <li key={item.category} onClick ={() => {
+                  FilterResult(item.category)
+                  onClick(item.category)
+                  setActiveAll(false)
+                }}
+                className={showResults === item.category ?  'active-link' :'not-active'}
+                >{item.category}</li>
+              )})}
+          </ul> 
+        </div>
+
+        {data.map((items) => {
+            return(<Items key={items.id} item = {items}/>)
+          })}
+      </div> 
+    </main>
+  )
+}
