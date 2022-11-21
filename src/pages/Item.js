@@ -12,22 +12,21 @@ export function Item() {
     console.log(found.img)
     return(found && (
         <main>
-        <div className="itemInfo">
-            <div className='itemInfo-desc'>
-                <h1>{found.title}</h1>
-                <h1>{found.price} CZK</h1>
-                <p>Для замовлення пишіть в інстаграм</p>
+            <div className="itemInfo">
+                <div className='itemInfo-desc'>
+                    <h3>{found.title}</h3>
+                    <b>{found.price} CZK</b>
+                </div>
+                <div className='itemInfo-list'>
+                {found.img.map(obj => {
+                    return (
+                        <div className='itemInfo-pic' key={obj.id}>
+                            <img src = {process.env.PUBLIC_URL + `/img/${obj.pic}`} alt = 'Chyba'></img>
+                        </div>
+                        ) 
+                })}
+                </div>
             </div>
-            <div className='itemInfo-list'>
-            {found.img.map(obj => {
-                return (
-                    <div className='itemInfo-pic' key={obj.id}>
-                        <img src = {process.env.PUBLIC_URL + `/img/${obj.pic}`} alt = 'Chyba'></img>
-                    </div>
-                    ) 
-            })}
-            </div>
-        </div>
         </main>
     ))
         

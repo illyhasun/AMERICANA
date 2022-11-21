@@ -1,4 +1,5 @@
 import icon from '../pictures/icon.svg'
+import presentationCatalog from '../pictures/presentation-catalog.png'
 import {useState} from 'react'
 import Items from '../components/Items'
 import {items} from '../data/products'
@@ -31,41 +32,43 @@ export function Katalog() {
 
   return(
     <main>
-
-      <div className='presentation' id='two'>
-        <h2>ЖІНОЧИЙ<br></br>КАТАЛОГ</h2>
+      <div className='presentation'>
+        <img class='catalog-pic'src={presentationCatalog} alt='Стагніть нормальний браузер'></img>
+        <div className='centered'>
+          <h2>WOMEN</h2>
+        </div>
       </div>
-
       <div className='catalog'>
-        <div id="flip" onClick={() => (setOpen(!open))}>
-          <h2>КАТЕГОРІЇ</h2>
-          <img className={open ? 'icon' : 'rotate-icon'}src={icon} alt='Стагніть нормальний браузер'></img>
-        </div>
+          <div id="flip" onClick={() => (setOpen(!open))}>
+            <h2>КАТЕГОРІЇ</h2>
+            <img className={open ? 'icon' : 'rotate-icon'} src={icon} alt='Стагніть нормальний браузер'></img>
+          </div>
 
-        <div className={open ? 'slide': 'not-slide'}>
-          <ul>
-            <li onClick ={() => {setData(items)
-              onClick('')
-              setActiveAll(false)
-            }}
-            className={showResults === '' || activeAll ?  'active-link' : 'not-active' }
-            >ВСЕ</li>
-            {pushUniqueCategory.map(item => {
-              return (
-                <li key={item.category} onClick ={() => {
-                  FilterResult(item.category)
-                  onClick(item.category)
-                  setActiveAll(false)
-                }}
-                className={showResults === item.category ?  'active-link' :'not-active'}
-                >{item.category}</li>
-              )})}
-          </ul> 
+          <div className={open ? 'slide': 'not-slide'}>
+            <ul>
+              <li onClick ={() => {setData(items)
+                onClick('')
+                setActiveAll(false)
+              }}
+              className={showResults === '' || activeAll ?  'active-link' : 'not-active' }
+              >ВСЕ</li>
+              {pushUniqueCategory.map(item => {
+                return (
+                  <li key={item.category} onClick ={() => {
+                    FilterResult(item.category)
+                    onClick(item.category)
+                    setActiveAll(false)
+                  }}
+                  className={showResults === item.category ?  'active-link' :'not-active'}
+                  >{item.category}</li>
+                )})}
+            </ul> 
         </div>
-
-        {data.map((items) => {
-            return(<Items key={items.id} item = {items}/>)
-          })}
+        <div className='catalog-items'>
+          {data.map((items) => {
+              return(<Items key={items.id} item = {items}/>)
+            })}
+        </div>
       </div> 
     </main>
   )

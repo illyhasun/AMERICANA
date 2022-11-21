@@ -11,7 +11,6 @@ export function Header() {
   const [nav, setNav] = useState(true)
 
   return (
-     <div className='container'>
       <header>
         <div className='header'>
         <div onClick={()=>setNav(!nav)} className='burger'>
@@ -36,6 +35,5 @@ export function Header() {
         </div>
         </div>
       </header>
-      </div>
     );
   }
