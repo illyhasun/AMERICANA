@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AMERICANA/static/css/main.cf91d1b0.css",
-    "main.js": "/AMERICANA/static/js/main.de8e964c.js",
+    "main.css": "/AMERICANA/static/css/main.b9a36689.css",
+    "main.js": "/AMERICANA/static/js/main.5f4aa66a.js",
     "static/media/presentation2.png": "/AMERICANA/static/media/presentation2.1ff1c1e27010920860eb.png",
     "static/media/presentation.png": "/AMERICANA/static/media/presentation.114158b58521e142770e.png",
     "static/media/presentation-catalog.png": "/AMERICANA/static/media/presentation-catalog.a68fa6cbdd096730e441.png",
@@ -10,11 +10,11 @@
     "static/media/logo-pic.svg": "/AMERICANA/static/media/logo-pic.763bdc6fba4df108062ecc70edc11734.svg",
     "static/media/burger.svg": "/AMERICANA/static/media/burger.fcc98e8ccdca5551ddd5680ca708df70.svg",
     "static/media/icon.svg": "/AMERICANA/static/media/icon.69931e7bd3f7c4a9fa34e4b96b53ae9d.svg",
-    "main.cf91d1b0.css.map": "/AMERICANA/static/css/main.cf91d1b0.css.map",
-    "main.de8e964c.js.map": "/AMERICANA/static/js/main.de8e964c.js.map"
+    "main.b9a36689.css.map": "/AMERICANA/static/css/main.b9a36689.css.map",
+    "main.5f4aa66a.js.map": "/AMERICANA/static/js/main.5f4aa66a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf91d1b0.css",
-    "static/js/main.de8e964c.js"
+    "static/css/main.b9a36689.css",
+    "static/js/main.5f4aa66a.js"
   ]
 }
