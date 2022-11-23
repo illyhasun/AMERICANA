@@ -3,11 +3,11 @@ export function About() {
         <main>
             <div className="aboutus">
                 <div>
-                    <h2>ПРО НАС</h2>
+                    <h2>ABOUT US</h2>
                     <br></br>
-                    <p>AMERICANA — це магазин стильного та сучасного одягу для чоловіків та жінок.
+                    <p>AMERICANA is a store of stylish and modern clothes for men and women.
                     <br></br><br></br>
-                    Ми пропонуємо актуальні моделі та модні новинки для тих, хто слідкує за фешн індустрією, прагне виглядати привабливо та почувати себе при цьому комфортно. У нас ви знайдете одяг для створення образів у стилі кежуал, повсякденному та класичному стилях.</p>
+                    We offer current models and fashion novelties for those who follow the fashion industry, want to look attractive and feel comfortable at the same time. Here you will find clothes for creating images in casual, everyday and classic styles.</p>
                 </div>
             </div>
         </main>

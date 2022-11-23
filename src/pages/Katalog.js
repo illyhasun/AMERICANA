@@ -33,14 +33,14 @@ export function Katalog() {
   return(
     <main>
       <div className='presentation'>
-        <img class='catalog-pic'src={presentationCatalog} alt='Стагніть нормальний браузер'></img>
+        <img className='catalog-pic'src={presentationCatalog} alt='Стагніть нормальний браузер'></img>
         <div className='centered'>
           <h2>WOMEN</h2>
         </div>
       </div>
       <div className='catalog'>
           <div id="flip" onClick={() => (setOpen(!open))}>
-            <h2>КАТЕГОРІЇ</h2>
+            <h2>CATEGORIES</h2>
             <img className={open ? 'icon' : 'rotate-icon'} src={icon} alt='Стагніть нормальний браузер'></img>
           </div>
 
@@ -51,7 +51,7 @@ export function Katalog() {
                 setActiveAll(false)
               }}
               className={showResults === '' || activeAll ?  'active-link' : 'not-active' }
-              >ВСЕ</li>
+              >All</li>
               {pushUniqueCategory.map(item => {
                 return (
                   <li key={item.category} onClick ={() => {

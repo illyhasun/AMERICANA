@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import logoText from '../pictures/logo-text.svg'
-import burger from '../pictures/burger.svg'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 import { useState } from 'react'
@@ -20,10 +19,10 @@ export function Header() {
         </div>
         <div className='left'>
           <ul className={nav ? 'active-menu' : 'not-active-menu'}>
-            <li id='home'><NavLink to="/AMERICANA/" className={ClassLink} onClick={()=>setNav(!nav)}>ГОЛОВНА</NavLink></li>
-            <li><NavLink to="/AMERICANA/catalog" className={ClassLink} onClick={()=>setNav(!nav)}>КАТАЛОГ</NavLink></li>
-            <li><NavLink to="/AMERICANA/about" className={ClassLink} onClick={()=>setNav(!nav)}>ПРО НАС</NavLink></li>
-            <li id='contact-left'><NavLink to="/AMERICANA/contacts" className={ClassLink} onClick={()=>setNav(!nav)}>КОНТАКТИ</NavLink></li>
+            <li id='home'><NavLink to="/AMERICANA/" className={ClassLink} onClick={()=>setNav(!nav)}>HOME</NavLink></li>
+            <li><NavLink to="/AMERICANA/catalog" className={ClassLink} onClick={()=>setNav(!nav)}>CATALOG</NavLink></li>
+            <li><NavLink to="/AMERICANA/about" className={ClassLink} onClick={()=>setNav(!nav)}>ABOUT US</NavLink></li>
+            <li id='contact-left'><NavLink to="/AMERICANA/contacts" className={ClassLink} onClick={()=>setNav(!nav)}>CONTACTS</NavLink></li>
           </ul>
         </div>
         <div className='logo-div'>
@@ -31,7 +30,7 @@ export function Header() {
         </div>
 
         <div className='right'>
-          <NavLink to="/AMERICANA/contacts" className={ClassLink}>КОНТАКТИ</NavLink>
+          <NavLink to="/AMERICANA/contacts" className={ClassLink}>CONTACTS</NavLink>
         </div>
         </div>
       </header>

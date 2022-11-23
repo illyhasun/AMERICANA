@@ -5,13 +5,14 @@ import {BrowserRouter} from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  
+
+setTimeout(() => {
+  root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop />
-      <App />
+      <App/>
     </BrowserRouter>
   </React.StrictMode>
 
-);
+)}, 1000)

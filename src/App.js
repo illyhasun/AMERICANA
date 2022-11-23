@@ -1,4 +1,5 @@
 import './index.css'
+import { useState } from 'react'
 
 import {Routes, Route} from 'react-router-dom'
 
@@ -11,10 +12,17 @@ import {Item} from './pages/Item'
 import {Footer} from './components/Footer'
 import {Header} from './components/Header'
 
-
 function App() {
+  const [loading, setLoading] = useState(true)
+  const preloader = document.getElementById('prelouder-container')
+  if(preloader){
+    setTimeout(()=> {
+      preloader.style.display = 'none'
+      setLoading(false)
+    }, 1000)
+  }
   return (
-  <>
+  !loading && <>
     <Header />
       <Routes>
         <Route path='/AMERICANA/' element={<Home />} />

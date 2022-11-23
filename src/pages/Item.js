@@ -1,6 +1,4 @@
 import {useParams} from "react-router"
-import ItemInfo from '../components/ItemInfo'
-import {Link} from 'react-router-dom'
 import {items} from '../data/products'
 
 
@@ -15,7 +13,7 @@ export function Item() {
             <div className="itemInfo">
                 <div className='itemInfo-desc'>
                     <h3>{found.title}</h3>
-                    <b>{found.price} CZK</b>
+                    <b>{found.price} USD</b>
                 </div>
                 <div className='itemInfo-list'>
                 {found.img.map(obj => {

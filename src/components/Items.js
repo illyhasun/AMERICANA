@@ -10,7 +10,7 @@ function Items({item}) {
         </div>
         <div>
             <h4>{item.title}</h4>
-            <b>{item.price} UAH</b>
+            <b>{item.price} USD</b>
         </div>
     </div>
   )

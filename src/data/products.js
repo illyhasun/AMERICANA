@@ -1,7 +1,7 @@
 export const items = [
     {
       id: 1,
-      title: 'Куртка чорна "ONDYKE"',
+      title: 'Jacket black "ONDYKE"',
       img: [
         {id: 1, pic: '/bunda/bunda-main.png'},
         {id: 2, pic: '/bunda/bunda-1.png'},
@@ -9,13 +9,13 @@ export const items = [
         {id: 4, pic: '/bunda/bunda-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Куртки',
+      category: 'jackets',
       price: '2099.99'
     },
     
     {
       id: 2,
-      title: 'куртка корчинева "ONDYKE"',
+      title: 'Jacket brown "ONDYKE"',
       img: [
         {id: 1, pic: '/ponozky/ponozky-main.png'},
         {id: 2, pic: '/ponozky/ponozky-1.png',},
@@ -23,12 +23,12 @@ export const items = [
         {id: 4, pic: '/ponozky/ponozky-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Куртки',
+      category: 'jackets',
       price: '1999.99'
     },
     {
       id: 3,
-      title: 'Куртка синя "DYADYAROBI"',
+      title: 'Sweater blue "DYADYAROBI"',
       img: [
         {id: 1, pic: '/mikina/mikina-main.png'},
         {id: 2, pic: '/mikina/mikina-1.png'},
@@ -36,12 +36,12 @@ export const items = [
         {id: 4, pic: '/mikina/mikina-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '5249.55'
     },
     {
       id: 4,
-      title: 'Кофта розова "DYADYAROBI"',
+      title: 'Sweater rose "DYADYAROBI"',
       img: [
         {id: 1, pic: '/cepice/cepice-main.png'},
         {id: 2, pic: '/cepice/cepice-1.png'},
@@ -49,12 +49,12 @@ export const items = [
         {id: 4, pic: '/cepice/cepice-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '4394.99'
     },
     {
       id: 5,
-      title: 'Куртка синя "DYADYAROBI"',
+      title: 'Sweater blue "DYADYAROBI"',
       img: [
         {id: 1, pic: '/mikina/mikina-main.png'},
         {id: 2, pic: '/mikina/mikina-1.png'},
@@ -62,12 +62,12 @@ export const items = [
         {id: 4, pic: '/mikina/mikina-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '4429.99'
     },
     {
       id: 6,
-      title: 'Куртка чорна "ONDYKE"',
+      title: 'Jacket black "ONDYKE"',
       img: [
         {id: 1, pic: '/bunda/bunda-main.png'},
         {id: 2, pic: '/bunda/bunda-1.png'},
@@ -75,12 +75,12 @@ export const items = [
         {id: 4, pic: '/bunda/bunda-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Куртки',
+      category: 'jackets',
       price: '3309.99'
     },
     {
       id: 7,
-      title: 'Куртка синя "DYADYAROBI"',
+      title: 'Sweater blue "DYADYAROBI"',
       img: [
         {id: 1, pic: '/mikina/mikina-main.png'},
         {id: 2, pic: '/mikina/mikina-1.png'},
@@ -88,12 +88,12 @@ export const items = [
         {id: 4, pic: '/mikina/mikina-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '449.99'
     },
     {
       id: 8,
-      title: 'куртка корчинева "ONDYKE"',
+      title: 'Jacket brown "ONDYKE"',
       img: [
         {id: 1, pic: '/ponozky/ponozky-main.png'},
         {id: 2, pic: '/ponozky/ponozky-1.png'},
@@ -101,12 +101,12 @@ export const items = [
         {id: 4, pic: '/ponozky/ponozky-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Куртки',
+      category: 'jackets',
       price: '2249.99'
     },
     {
       id: 9,
-      title: 'Кофта розова "DYADYAROBI"',
+      title: 'Sweater pink "DYADYAROBI"',
       img: [
         {id: 1, pic: '/cepice/cepice-main.png'},
         {id: 2, pic: '/cepice/cepice-1.png'},
@@ -114,12 +114,12 @@ export const items = [
         {id: 4, pic: '/cepice/cepice-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '4394.99'
     },
     {
-      id: 9,
-      title: 'Кофта розова "DYADYAROBI"',
+      id: 10,
+      title: 'Sweater pink "DYADYAROBI"',
       img: [
         {id: 1, pic: '/cepice/cepice-main.png'},
         {id: 2, pic: '/cepice/cepice-1.png'},
@@ -127,7 +127,7 @@ export const items = [
         {id: 4, pic: '/cepice/cepice-3.png'}
       ],
       desc: 'popisek popisek popisek popisek popisek popisek popisek popisek',
-      category: 'Кофти',
+      category: 'sweaters',
       price: '4394.99'
     },
 //     {
