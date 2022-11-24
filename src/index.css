@@ -30,7 +30,7 @@ body {
     50%{
         -webkit-transition: scale(1);
         opacity: 1;
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
     100%{
         -webkit-transition: scale(1);
@@ -42,7 +42,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 50%;
+    top: 45%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -51,12 +51,6 @@ body {
     margin-top: 10px;
     height: 50px;
 }
-
-/* #prelouder{
-    width: 100vh;
-    height: 100px;
-    background-image: url('./pictures/icon.svg');
-} */
 /* #####################################################
                         Текст
 ##################################################### */
@@ -272,10 +266,11 @@ ul li:first-child{
                         ФУТЕР
 ##################################################### */
 footer{
-    position: absolute;
-    bottom: 10px;
+    /* position: absolute; */
+    background-color: #090909;
+    /* bottom: 10px; */
     width: 80%;
-    padding: 0 10%;
+    padding: 5px 10%;
 }
 footer ul{
     display: flex;
@@ -326,7 +321,7 @@ footer div{
 }
 .home-pic{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 44px);
     object-fit: cover;
     object-position: top;
 }
@@ -354,7 +349,7 @@ footer div{
 ##################################################### */
 
 .aboutus{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     margin-top: 40px;
     width: 80%;
     padding: 20px 10%;
@@ -485,8 +480,8 @@ footer div{
 ##################################################### */
 
 .contacts{
-    height: calc(100vh - 100px);
-    margin-top: 50px;
+    height: calc(100vh - 120px);
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
